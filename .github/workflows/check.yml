@@ -22,7 +22,7 @@ jobs:
 
       - name: Publish
         run: >
-          ./gradlew -i publishToMavenLocal
+          ./gradlew publishToMavenLocal
   pulish-windows:
     name: Publish Windows
     continue-on-error: true
@@ -40,4 +40,4 @@ jobs:
 
       - name: Publish
         run: >
-          ./gradlew -i publishToMavenLocal
+          ./gradlew publishToMavenLocal
