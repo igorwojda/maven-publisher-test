@@ -15,10 +15,6 @@ java {
     }
 }
 
-tasks.named<Test>("test") {
-    useJUnitPlatform()
-}
-
 val publicationName = "konsist"
 
 publishing {
