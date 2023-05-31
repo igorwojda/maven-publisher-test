@@ -23,6 +23,12 @@ jobs:
       - name: Publish
         run: >
           ./gradlew publishToMavenLocal
+          -P konsist.releaseTarget=local
+          -P konsist.signingKey='AAA'
+          -P konsist.signingPassword='BBB'
+          -P konsist.ossrhUsername='CCC'
+          -P konsist.ossrhPassword='DDD'
+
   pulish-windows:
     name: Publish Windows
     continue-on-error: true
@@ -41,3 +47,8 @@ jobs:
       - name: Publish
         run: >
           ./gradlew publishToMavenLocal
+          -P konsist.releaseTarget=local
+          -P konsist.signingKey='AAA'
+          -P konsist.signingPassword='BBB'
+          -P konsist.ossrhUsername='CCC'
+          -P konsist.ossrhPassword='DDD'
