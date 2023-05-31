@@ -55,6 +55,7 @@ publishing {
 }
 
 signing {
+    // Dummy key 😛
     useInMemoryPgpKeys(
         """
             -----BEGIN PGP PRIVATE KEY BLOCK-----
