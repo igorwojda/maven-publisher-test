@@ -41,15 +41,51 @@ publishing {
 
             pom {
                 name.set("konsist")
+                description.set("Some desc. More desc")
                 url.set("https://konsist.lemonappdev.com/")
+
+                contributors {
+                    contributor {
+                        name.set("Igor Wojda")
+                        email.set("igor.wojda@gmail.com")
+                    }
+                }
+
+                properties.set(
+                    mapOf(
+                        "myProp" to "value",
+                        "prop.with.dots" to "anotherValue",
+                    ),
+                )
+
+                licenses {
+                    license {
+                        name.set("The Apache License, Version 2.0")
+                        url.set("https://www.apache.org/licenses/LICENSE-2.0.txt")
+                    }
+                }
+
+                developers {
+                    developer {
+                        id.set("lemonappdev")
+                        name.set("Lemon App Dev")
+                    }
+                }
+
+                // Docs: https://maven.apache.org/pom.html#scm
+                scm {
+                    url.set("https://github.com/LemonAppDev/konsist")
+                    connection.set("scm:git:git@github.com:LemonAppDev/konsist.git")
+                    developerConnection.set("scm:git:git@github.com:LemonAppDev/konsist.git")
+                }
             }
         }
-    }
 
-    repositories {
-        maven {
-            name = "local"
-            url = mavenLocal().url
+        repositories {
+            maven {
+                name = "local"
+                url = mavenLocal().url
+            }
         }
     }
 }
