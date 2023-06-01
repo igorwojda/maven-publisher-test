@@ -13,4 +13,4 @@ plugins {
 }
 
 rootProject.name = "maven-publisher-test"
-include("app")
+include("lib")
