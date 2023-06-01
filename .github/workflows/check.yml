@@ -7,7 +7,6 @@ on:
 jobs:
   publish-unubtu:
     name: Publish Ubuntu
-    continue-on-error: true
     runs-on: ubuntu-latest
     steps:
       - name: checkout
